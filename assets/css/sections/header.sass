@@ -1,0 +1,61 @@
+// Header styles
+.main-header
+  .logo
+    text-indent: 101%
+    overflow: hidden
+    white-space: nowrap
+    width: 35px
+    height: 35px
+    background:
+      image: url(../img/logo.svg)
+      repeat: no-repeat
+      size: cover
+      position: center center
+
+  nav
+    a
+      display: inline-block
+      font-size: 1rem
+      margin-left: calc(0.0625em * 35)
+      padding: calc(0.0625em * 5)
+      color: $primary
+      +transition(all)
+
+      &:first-child
+        margin-left: 0
+
+      &:hover
+        color: $secondary
+
+      &.cta-btn, &.cta-btn:visited
+        box-shadow: none
+        background: darken($secondary, 5%)
+
+
+
+// Media Queries
+@media(max-width: 500px)
+  .main-header
+    .logo
+      width: auto
+      height: 30px
+      margin-bottom: 30px
+      background-size: 60px 60px
+
+    nav
+      display: flex
+      justify-content: space-between
+      align-items: center
+      a
+        font-size: 0.9rem
+        margin: 0
+
+@media(max-width: 360px)
+  .main-header
+    nav a
+      margin-left: calc(0.0625em * 25)
+
+@media(max-width: 330px)
+  .main-header
+    nav a
+      margin-left: calc(0.0625em * 20)

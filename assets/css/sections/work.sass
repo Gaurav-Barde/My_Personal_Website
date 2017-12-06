@@ -1,0 +1,25 @@
+.work
+  position: relative
+
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    left: calc((100vw - 100%)/-2)
+    width: 100vw
+    height: 100%
+    background: $bg-2
+    z-index: -1
+
+  .flex
+    align-items: flex-start
+
+  h1
+    font-size: $head2
+    margin-bottom: 1em
+
+
+  .thumb
+    height: 310px
+    width: 100%
+    background-size: contain

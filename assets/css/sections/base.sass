@@ -1,0 +1,77 @@
+//base styles
+*
+  margin: 0
+  padding: 0
+  text-decoration: none
+  box-sizing: border-box
+
+
+\:root
+  font-size: 16px
+
+
+// colors
+$bg: #F6F6F8
+$bg-2: #dfedff
+$primary: #27303b
+$secondary: #0054c7
+$light: #505f71
+
+
+
+//font-size
+$head1: 4.5rem
+// 4.5*16 = 72px
+$head2: 3rem
+// 3*16 = 48px
+$head3: 2.25rem
+// 2.25*16 = 36px
+$head4: 1.75rem
+// 1.75*16 = 28px
+$head5: 1.5rem
+// 1.5*16 = 24px
+
+//Transition Mixin
+@mixin transition($prop)
+  transition: $prop 300ms ease-in-out
+
+body
+  background: $bg
+  max-width: 100vw
+  overflow-x: hidden
+
+
+.container
+  max-width: 1060px
+  margin: 30px auto
+  padding: 0 30px
+  font-family: 'Helvetica Neue', 'Open Sans', sans-serif
+  color: $primary
+
+
+  section
+    padding: 80px 0
+
+
+  .cta-btn, .cta-btn:visited
+    display: inline-block
+    background: darken($secondary, 20%)
+    color: $bg
+    padding: calc(0.0625em * 5)
+    border-radius: calc(0.0625em*3)
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2)
+    +transition(all)
+    cursor: pointer
+
+
+    &:hover, &:active
+      background: $secondary
+      box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2)
+
+
+
+// Media Queries
+@media(max-width: 725px)
+  .container
+    padding: 0 20px
+    margin: 15px auto

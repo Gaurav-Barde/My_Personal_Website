@@ -1,0 +1,37 @@
+.container
+  .flex
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+
+  .flex--center
+    justify-content: center
+
+
+  .flex--sb
+    justify-content: space-between
+
+  .flex--sa
+    justify-content: space-around
+
+
+  .col-1
+    width: calc(50% - 35px)
+    overflow-x: hidden
+
+    &:nth-child(even)
+      margin-left: 35px
+    &:nth-child(odd)
+      margin-right: 35px
+
+@media(max-width: 500px)
+  .container
+    .flex
+      display: block
+
+    .col-1
+      width: 100%
+      margin: 0
+
+      &:first-child
+        margin-bottom: 30px
