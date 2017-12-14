@@ -13,10 +13,10 @@
       <div class="logo">Gaurav Barde</div>
 
       <nav>
-        <a href="#">Work</a>
-        <a href="#">Resume</a>
-        <a href="https://www.youtube.com/channel/UCRsDtobIN7NuUVMECWWW0RQ">YouTube</a>
-        <a href="#" class="cta-btn">Contact</a>
+        <a href="#work">Work</a>
+        <a href="https://firebasestorage.googleapis.com/v0/b/gauravbarde-4957b.appspot.com/o/Resume-min.pdf?alt=media&token=cd69a1c5-afb3-43fe-9c6f-42076062ca6e" target="blank">Resume</a>
+        <a href="https://www.youtube.com/channel/UCRsDtobIN7NuUVMECWWW0RQ" target="blank">YouTube</a>
+        <a href="#contact" class="cta-btn">Contact</a>
       </nav>
     </header>  <!-- End of the Header -->
 
@@ -70,38 +70,58 @@
       </div>
     </section>  <!-- End of the skillls -->
 
-
-    <section class="work">
+    <section id="work">
       <h1>Work</h1>
       <div class="flex flex--sb">
         <div class="col-1 excellence-site">
-          <div class="thumb" style="background: url(assets/img/Excellence_Project.jpg) left top/cover no-repeat;"></div>
-          <h2 class="skill-title">UI/UX Designer</h2>
-          <p class="skills-details">I am a UI/UX Designer with more than 3 years of experience. I use Adobes’ Photoshop and Illustrator to create eye catchy user interfaces and graphics.</p>
+          <a href="">
+            <img src="assets/img/Excellence_Project.jpg" alt="Excellece.edu.in">
+            <div class="project-text">
+              <h6 class="skill-used">UI/UX  HTML/CSS/JS</h6>
+              <h4 class="project-title">Excellence Website</h4>
+              <p class="project-details">I designed and developed a fully responsive fictitius website called Excellence.edu.in to test My front end skills.</p>
+            </div>
+          </a>
         </div>
 
 
         <div class="col-1 personal-site">
-          <div class="thumb" style="background: url(assets/img/Personal_Website.jpg) left top/cover no-repeat;"></div>
-          <h2 class="skill-title">Front-End Developer</h2>
-          <p class="skills-details">I am a front-end designer with more than 2 years of experience. I give life to UI designs using latest web technologies.</p>
+            <img src="assets/img/Personal_Website.jpg" alt="GauravBarde.com">
+            <div class="project-text">
+              <h6 class="skill-used">UI/UX  HTML/CSS/JS</h6>
+              <h4 class="project-title">My Personal Website</h4>
+              <p class="project-details">I Designed and Developed my personal (this) website with full responsiveness to showcase my work to my potential employers and to grow my YouTube channel.</p>
+            </div>
         </div>
 
 
-        <div class="col-1 codepen">
-          CodePen
-        </div>
 
-        <div class="col-1 github">
-          GitHub
-        </div>
+        <a href="https://codepen.io/NeatDesigns/" class="col-1 codepen" target="blank">
+          <div><h4 class="project-title">CodePen</h4></div>
+        </a>
+
+        <a href="https://github.com/Gaurav-Barde" class="col-1 github" target="blank">
+          <div><h4 class="project-title">GitHub</h4></div>
+        </a>
+
 
       </div>
     </section>  <!-- End of the Work -->
 
+      <section id="contact" class="flex flex--center">
+      <h2>Contact Me here:</h2>
+      <h1><a href="mailto:gabarde25@gmail.com" target="blank">gabarde25@gmail.com</a></h1>
+    </section>
 
 
-    <aside style="height: 2000px;"></aside>
+    <footer id="main-footer" class="flex flex--sa">
+      <a href="https://www.youtube.com/channel/UCRsDtobIN7NuUVMECWWW0RQ" target="self"><div class="social-link" style="background-image: url(assets/img/YouTube.svg)"></div></a>
+      <a href=""><div class="social-link" style="background-image: url(assets/img/CodePen.svg)"></div></a>
+      <a href=""><div class="social-link" style="background-image: url(assets/img/GitHub.svg)"></div></a>
+      <a href=""><div class="social-link" style="background-image: url(assets/img/LinkedIn.svg)"></div></a>
+      <a href=""><div class="social-link" style="background-image: url(assets/img/Mail.svg)"></div></a>
+    </footer>
+
   </div>  <!-- End of the container -->
 
   <script src="assets/js/functions.js"></script>

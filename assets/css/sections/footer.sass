@@ -1,0 +1,61 @@
+#main-footer
+  padding: 100px 150px
+  position: relative
+
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    left: calc((100vw - 100%)/-2)
+    width: 100vw
+    height: 100%
+    background: lighten($primary, 8%)
+    z-index: -1
+
+  a
+    display: inline-block
+    margin: 0 60px 0px 0
+
+    &:last-child
+      margin: 0
+
+
+
+  .social-link
+    width: 60px
+    height: 50px
+    vertical-align: middle
+    background:
+      repeat: no-repeat
+      size: contain
+      position: center
+
+  @media(max-width: 900px)
+    padding: 100px 80px
+
+  @media(max-width: 760px)
+    padding: 100px 30px
+
+  @media(max-width: 640px)
+    .social-link
+      width: 50px
+      height: 40px
+
+
+  @media(max-width: 590px)
+    padding: 60px 30px
+
+    &.flex
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+    a
+      margin: 0 0 40px 0
+
+      &:last-child
+        margin: 0
+
+    .social-link
+      width: 60px
+      height: 50px

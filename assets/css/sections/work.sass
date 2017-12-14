@@ -1,5 +1,6 @@
-.work
+#work
   position: relative
+
 
   &:after
     content: ""
@@ -14,12 +15,95 @@
   .flex
     align-items: flex-start
 
+  .col-1
+    background: white
+    box-shadow: 4px 4px 40px 0 rgba(black, 0.15)
+    border-radius: 0.2rem
+
+    &:nth-child(1), &:nth-child(2)
+      margin-bottom: 50px
+
+    &.codepen, &.github
+      position: relative
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 430px
+      background:
+        position: center
+        size: cover
+
+      &:after
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba($bg, 1)
+
+      .project-title
+        font-size: $head3
+
+
+    &.codepen
+      background-image: url(../img/CodePen.svg)
+
+    &.github
+      background-image: url(../img/GitHub.svg)
+
+  a
+    height: 100%
+    display: block
+
   h1
-    font-size: $head2
+    font-size: $head3
     margin-bottom: 1em
 
 
-  .thumb
-    height: 310px
+  img
+    height: 250px
     width: 100%
-    background-size: contain
+
+  .project-text
+    padding: 25px 15px
+    height: 180px
+
+  .skill-used
+    color: rgba($primary, 0.70)
+
+  .project-title
+    margin: 8px 0 10px
+    font-size: 1.4rem
+    position: relative
+    z-index: 5
+
+  .project-details
+    font-size: 0.92rem
+    line-height: 1.5em
+
+
+  @media(max-width: 800px)
+    .flex
+      display: block
+
+    .col-1
+      width: auto
+      margin: 0 0 70px 0 !important
+
+      &:last-child
+        margin-bottom: 0 !important
+
+      &.codepen, &.github
+        height: 330px
+
+    img
+      height: 300px
+
+    .project-text
+      height: auto
+
+
+  @media(max-width: 420px)
+    img
+      height: 250px

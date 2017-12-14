@@ -1,0 +1,44 @@
+#contact
+  flex-direction: column
+  position: relative
+  color: darken($primary, 10%)
+  padding: 100px 0
+
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    left: calc((100vw - 100%)/-2)
+    width: 100vw
+    height: 100%
+    background: lighten($secondary, 40%)
+    z-index: -1
+
+  h2
+    font-size: $head4
+    margin-bottom: 1em
+
+  h1
+    font-size: $head2
+
+
+  @media(max-width: 630px)
+    h2
+      font-size: $head5
+
+    h1
+      font-size: $head3
+
+
+
+
+  @media(max-width: 440px)
+    h2
+      font-size: 20px
+
+    h1
+      font-size: $head5
+
+  @media(max-width: 500px)
+    &.flex
+      display: flex
